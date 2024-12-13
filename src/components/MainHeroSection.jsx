@@ -7,10 +7,10 @@ export default function MainHeroSection(){
     
     return(
         <>
-            <div className=' justify-center '>
+            <div className='py-44  bg-black'>
                 <Navbar/>
                 <Hero/>
-                <DropAnimation/>
+                {/* <DropAnimation/> */}
             </div>
         </>
     )

@@ -31,14 +31,14 @@ export default function Parallax2({pic1, pic2, pic3}) {
     }, [])
     return (
         <>
-            <div className="bg-white w-full min-h-screen flex">
-                <div className="ml-32">
-                    <div className="font-poppins font-bold text-3xl border-2 p-5 flex justify-between rounded-md">
+            <div className="bg-white w-full  grid sm:grid-cols-2 mb-10">
+                <div className="sm:ml-32 ml- mx-5">
+                    <div className="font-poppins font-bold text-3xl sm:w-[32vw] w-[90vw] flex justify-around border-2 p-5 rounded-md">
                         <h1>Initiatives of IIE cell</h1>
                         <h1>🏆</h1>
                     </div>
-                    <div className="font-poppins font-medium w-[28vw] border-2 mt-10 p-5 rounded-lg">
-                        <h1><span className="font-semibold text-lg">1.</span> TIdea Generation and Innovation Labs.</h1>
+                    <div className="font-poppins font-medium sm:w-[32vw] w-[90vw] border-2 mt-10 p-5 rounded-lg">
+                        <h1><span className="font-semibold text-lg">1.</span> Idea Generation and Innovation Labs.</h1>
                         <br />
                         <h1><span className="font-semibold text-lg">2.</span>  Startup Incubation and Seed Funding.</h1>
                         <br />
@@ -48,13 +48,13 @@ export default function Parallax2({pic1, pic2, pic3}) {
                         <br />
                         <h1><span className="font-semibold text-lg">5.</span>  Hackathons and Pitch Competitions.</h1>
                     </div>
-                    <span className="mt-5 ml-96 flex border-2 w-[5vw] justify-center p-2 font-poppins rounded-lg">
+                    <span className="mt-5 float-right mr-5 mb-5 sm:mr-24 flex border-2 w-[15vw] sm:w-[10vw] justify-center p-2 font-poppins rounded-lg">
                         <h1>See...</h1>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg>
                     </span>
                 </div>
 
-                <div className="images relative w-full ">
+                <div className="images -pt-14 mb-10 relative w-full sm:block hidden">
                    
                     <img 
                         src="https://i.pinimg.com/736x/5d/e6/26/5de6263a0a1c8da51f9d9105859b712c.jpg" 
@@ -78,4 +78,3 @@ export default function Parallax2({pic1, pic2, pic3}) {
         </>
     );
 }
-

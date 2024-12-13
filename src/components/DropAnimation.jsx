@@ -51,17 +51,30 @@ export default function DropAnimation() {
 
   return (
     <>
-      <div className='drop opacity-0'>
-        <div className="ml-[5vw] mt-52 relative">
-          <div className="bgPic flex relative z-10">
-            <img src={d1} alt="image 1" />
-            <img src={d1} alt="image 2" />
-          </div>
-          <div className="frontImage absolute z-20 -top-20 left-[50%] transform -translate-x-1/2">
-            <img src={pic} alt="frontImg" className="h-[600px] w-[900px]" />
-          </div>
-        </div>
-      </div>
+     <div className="drop opacity-0">
+  <div className="mt-20 sm:mt-32 lg:mt-52 relative">
+    <div className="bgPic grid grid-cols-2 sm:flex-row relative z-10 grid-cols-2 ">
+      <img 
+        src={d1} 
+        alt="image 1"
+        className="w-full "
+      />
+      <img 
+        src={d1} 
+        alt="image 2" 
+        className="w-full "
+      />
+    </div>
+    <div className="frontImage flex justify-center absolute z-20 -top-10 sm:-top-16 lg:-top-20">
+      <img 
+        src={pic} 
+        alt="frontImg" 
+        className="w-3/4 mx-auto sm:w-1/2 lg:w-1/3"
+      />
+    </div>
+  </div>
+</div>
+
     </>
   );
 }

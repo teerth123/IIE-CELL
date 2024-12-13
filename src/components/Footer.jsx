@@ -2,19 +2,19 @@ import React from "react";
 
 export default function Foot() {
     return (
-        <div className="bg-[#000000] w-full pt-10 h-auto pb-3 rounded-t-3xl ">
-            <div className="flex mt-3 justify-around ">
-                <div className="mt-36">
-                <div className="flex mt-3 ">
-                    <h1 className="mr-1 text-[#E44C43] font-inter font-bold text-3xl">IIE</h1>
-                    <h1 className="text-white font-inter font-bold text-3xl">Cell</h1>
-                </div>
-                <div className="flex mt-3 ">
-                    <div className="text-white mb-2">
-                    <i class="ri-copyright-line"></i>
+        <div className=" bg-[#000000] w-full pt-10 h-auto pb-3 rounded-t-3xl ">
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_1fr] mt-3  ">
+                <div className=" mt-36">
+                    <div className="flex mt-3 ">
+                        <h1 className="mr-1 text-[#E44C43] font-inter font-bold text-3xl">IIE</h1>
+                        <h1 className="text-white font-inter font-bold text-3xl">Cell</h1>
                     </div>
-                <h1 className="text-[#878787]">All rights reserved.</h1>
-                </div>
+                    <div className="flex mt-3 ">
+                        <div className="text-white mb-2">
+                        <i class="ri-copyright-line"></i>
+                        </div>
+                        <h1 className="text-[#878787]">All rights reserved.</h1>
+                    </div>
                 </div>
                 
                 <div className="mt-8 mb-8">

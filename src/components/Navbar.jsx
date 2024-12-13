@@ -39,10 +39,10 @@ export default function App() {
       {/* Right Side of the Navbar (Links) */}
       <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 items-center">
         {/* Regular Navbar Links */}
-        <h1 className="text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm xs:hidden sm:block">
+        <h1 className="text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm hidden sm:block">
           Events
         </h1>
-        <h1 className="text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm xs:hidden sm:block">
+        <h1 className="text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm hidden sm:block">
           Blogs
         </h1>
 
@@ -111,16 +111,16 @@ export default function App() {
         </div>
 
         {/* Desktop View Links */}
-        <h1 className={`text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm xs:hidden sm:hidden md:hidden lg:block `}>
+        <h1 className={`text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm hidden sm:hidden md:hidden lg:block `}>
           Internship
         </h1>
-        <h1 className={`text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm xs:hidden sm:hidden md:hidden lg:block  `}>
+        <h1 className={`text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm hidden sm:hidden md:hidden lg:block  `}>
           Startup
         </h1>
-        <h1 className={`text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm xs:hidden sm:hidden md:hidden lg:block  `}>
+        <h1 className={`text mx-2 py-2 cursor-pointer hover:text-gray-600 transition-colors text-sm hidden sm:hidden md:hidden lg:block  `}>
           Team
         </h1>
-        <div className={`text bg-[#e6e6e6] rounded-[114px] px-2 justify-center align-center text-black mx-2 cursor-pointer hover:bg-gray-800 transition-colors text-sm xs:hidden sm:hidden md:hidden lg:block `}>
+        <div className={`text bg-[#e6e6e6] rounded-[114px] px-2 justify-center align-center text-black mx-2 cursor-pointer hover:bg-gray-800 transition-colors text-sm hidden sm:hidden md:hidden lg:block `}>
           Contact
         </div>
       </div>

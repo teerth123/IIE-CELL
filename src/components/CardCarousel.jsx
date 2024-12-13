@@ -1,7 +1,7 @@
 export default function CardCarousel({ pic, category, head }) {
     return (
         <>
-            <div className="h-[28vw] w-[22vw] bg-white rounded-xl relative overflow-hidden m-5 transform transition-all duration-300 hover:opacity-100 group">
+            <div className=" bg-white rounded-xl relative overflow-hidden m-5 transform transition-all duration-300 hover:opacity-100 group">
                 <div className="relative z-0 w-full h-full">
                     <img src={pic} alt="" className="w-full h-full object-cover rounded-xl" />
                 </div>
