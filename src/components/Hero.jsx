@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 import { ThreeDCardDemo } from "./3dcardForHero";
-
+import ShootingStars from "./Shootingstars";
 export default function Hero() {
     useEffect(() => {
         const tl = gsap.timeline();
@@ -44,7 +44,8 @@ export default function Hero() {
 
     return (
         <>  
-            <div className="w-[100] sm:grid sm:grid-cols-2">
+            <div className="w-[100] sm:grid sm:grid-cols-2 z-10">
+                <ShootingStars/>
                 <div>
                     <h1 className="heading font-medium justify-center items-center text-6xl sm:text-5xl md:text-6xl text-white font-poppins opacity-0 ml-[8vw]">
                         Heading in 6-8 words dobor <br /> dummy text ohh yeah

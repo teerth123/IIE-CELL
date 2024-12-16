@@ -1,37 +1,37 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 
-export default function Parallax2({pic1, pic2, pic3}) {
-    useEffect(()=>{
+export default function Parallax2() {
+    // useEffect(()=>{
         
       
-        gsap.to('.don', {
-            y: -150, // Move image upwards on scroll (slower than the first image)
-            duration: 3,
-            scrollTrigger: {
-              trigger: '.images',
-              start: 'top 80%',
-              end: 'bottom top',
-              scrub: 2,
-              markers: false,
-            }
-        });
+    //     gsap.to('.don', {
+    //         y: -150, // Move image upwards on scroll (slower than the first image)
+    //         duration: 3,
+    //         scrollTrigger: {
+    //           trigger: '.images',
+    //           start: 'top 80%',
+    //           end: 'bottom top',
+    //           scrub: 2,
+    //           markers: false,
+    //         }
+    //     });
 
-        gsap.to('.tin', {
-            y: -200, // Move image upwards on scroll (slower than the first image)
-            duration: 3,
-            scrollTrigger: {
-              trigger: '.images',
-              start: 'top 90%',
-              end: 'bottom top',
-              scrub: 2,
-              markers: false,
-            }
-        });
-    }, [])
+    //     gsap.to('.tin', {
+    //         y: -200, // Move image upwards on scroll (slower than the first image)
+    //         duration: 3,
+    //         scrollTrigger: {
+    //           trigger: '.images',
+    //           start: 'top 90%',
+    //           end: 'bottom top',
+    //           scrub: 2,
+    //           markers: false,
+    //         }
+    //     });
+    // }, [])
     return (
         <>
-            <div className="bg-white w-full  grid sm:grid-cols-2 mb-10">
+            <div className="bg-white w-full  grid sm:grid-cols-2 mb-32">
                 <div className="sm:ml-32 ml- mx-5">
                     <div className="font-poppins font-bold text-3xl sm:w-[32vw] w-[90vw] flex justify-around border-2 p-5 rounded-md">
                         <h1>Initiatives of IIE cell</h1>
@@ -54,23 +54,19 @@ export default function Parallax2({pic1, pic2, pic3}) {
                     </span>
                 </div>
 
-                <div className="images -pt-14 mb-10 relative w-full sm:block hidden">
+                <div className="images mb-10 -mt-20 relative w-full sm:block hidden">
                    
                     <img 
                         src="https://i.pinimg.com/736x/5d/e6/26/5de6263a0a1c8da51f9d9105859b712c.jpg" 
                         alt="" 
-                        className="don z-10 absolute w-[50vw] h-[600px] ml-40 object-contain"
+                        className="don z-10 absolute w-[50vw] h-[600px] -mt-5 ml-40 object-contain"
                     />
                     <img 
                         src="https://i.pinimg.com/736x/f5/a0/36/f5a036294ddce2f695d06fd5086545eb.jpg" 
                         alt="" 
-                        className="tin z-20 absolute w-[50vw] h-[600px] mt-20  object-contain"
+                        className="tin z-20 absolute w-[50vw] h-[600px]  object-contain"
                     />
-                    <img 
-                        src="https://i.pinimg.com/736x/a9/7d/d0/a97dd011bb90f46812e55674ea1446fa.jpg" 
-                        alt="" 
-                        className="ek z-0 absolute w-[30vw] h-[300px] mt-20 ml-36 object-contain"
-                    />
+                    
                 
                 </div>
                     

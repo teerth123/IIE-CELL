@@ -4,7 +4,7 @@ export default function Foot() {
     return (
         <div className=" bg-[#000000] w-full pt-10 h-auto pb-3 rounded-t-3xl ">
             <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_1fr] mt-3  ">
-                <div className=" mt-36">
+                <div className=" mt-36 ml-14">
                     <div className="flex mt-3 ">
                         <h1 className="mr-1 text-[#E44C43] font-inter font-bold text-3xl">IIE</h1>
                         <h1 className="text-white font-inter font-bold text-3xl">Cell</h1>
